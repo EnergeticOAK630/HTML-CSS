@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula8</title>
+</head>
+<body>
+    <h1>O Biel é a melhor pessoa <br> que eu conheci</h1>
+    <script>
+        const pessoa = {
+            nome: ["Gabriel", "Neri"],
+            idade: 35,
+            sexo: "masculino",
+            interesses: ["leitura", "escrita"],
+            bio: function (){
+                alert(
+                    this.nome[0] +
+                    "" +
+                    this.nome[1] +
+                    "tem" +
+                    this.idade +
+                    "anos de idade. Ele gosta de" +
+                    this.interesses[0]+
+                    "a" +
+                    this.interesses[1] +
+                    "."
+                );
+            },
+            saudacao: function (){
+                alert("Oli Eu sou" + this.nome[0] + "."); 
+            },
+        };
+        pessoa.bio();
+        pessoa.saudacao();
+    </script>
+</body>
+</html>
